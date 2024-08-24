@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    position: relative;
+    background-color: #2d2d2d;
+}
+header{
+    width: 900px;
+    height: 44px;
+    padding: 24px   48px;
+    margin-left: 105px;
+    margin-right: 105px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+}
+
+header img{
+    height: 40px;
+    position: absolute;
+    left: -20px;
+    padding-left: 30px;
+    margin: 5px 10px;
+}
+
+header select{
+    width: 126px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 6px 6px 32px;
+    color: white;
+    background-color: transparent;
+    border-radius: 2px;
+    margin: 5px 10px;
+    position: absolute;
+    right: 90px;
+}
+
+header select:focus{
+    outline: 1.5px solid white;
+}
+
+header label img{
+    height: 12px;
+    position: absolute;
+    left: 744px;
+    bottom: 35px;
+}
+
+header select option{
+    color: black;
+    font-weight: 500;
+}
+
+header button{
+    width: 76px;
+    height: 32px;
+    color: white;
+    font-weight: 600;
+    background-color: #E50914;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    margin: 5px 10px;
+    position: absolute;
+    right: 0px;
+    bottom: 25px;
+}
+
+.sec1{
+    width: 100%;
+    height: 700px;
+    background-image: url("assets/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7.5px;
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 45px;
+}
+
+.heading h1{
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    margin-bottom: 10px;
+}
+
+.heading h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.heading h3{
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 16px;
+    font-stretch: condensed;
+}
+
+.heading input{
+    width: 332px;
+    height: 24px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.247);
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 2px;
+    padding: 24px 16px 8px 16px;
+    display: inline-block;
+    margin: 20px 5px 0px 0px;
+    outline: none;
+}
+
+.heading form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading1{
+    width: 700px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.heading1 label{
+    color: rgb(202, 202, 202);
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    top: 38px;
+    left: 74px;
+    transition: all 0.2s ease;
+}
+
+.para{
+    visibility: hidden;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: 86px;
+    left: 84px;
+}
+
+.para img{
+    height: 18px;
+    position: absolute;
+    right: 115px;
+}
+
+.heading input:valid{
+    border: 2px solid green;
+}
+
+.heading input:placeholder-shown{
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.heading input:invalid{
+    border: 2px solid #E50914;
+}
+
+.heading input:invalid~.para{
+    visibility: visible;
+    color: #E50914;
+}
+
+.heading input:focus{
+    outline: 2px solid rgb(202, 202, 202);
+    border-radius: 2px;
+}
+
+.heading input:focus ~ label,
+.heading input:not(:placeholder-shown)~label{
+    position: absolute;
+    top: 28px;
+    left: 74px;
+    color: rgb(202, 202, 202);
+    font-size: 12px; 
+    transition: all 0.2s ease;   
+}
+
+.heading button{
+    width: 211px;
+    height: 56px;
+    color: white;
+    background-color: #E50914;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    padding-left: 25px;
+    margin: 20px 5px 0px 0px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    left: 2px;
+}
+
+.heading button a{
+    width: 211px;
+    height: 100px;
+    position: relative;
+    top: 40px;
+    z-index: 10;
+}
+
+.heading button img{
+    height: 19px;
+    position: relative;
+    top: 2px;
+    left: 20px;
+}
+
+.sec2{
+    width: 100%;
+    height: 353px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0px;
+    margin-bottom: 7.5px;
+}
+
+.div1{
+    margin-left: 154px;
+}
+.sec2 h1{
+    width: 400px;
+    color: white;
+    text-align: left;
+    font-size: 44px;
+    font-weight: 650;
+}
+.sec2 h2{
+    width: 470px;
+    color: white;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 450;
+}
+.sec2 img{
+    height: 350px;
+    margin-right: 154px;
+}
+
+.sec3{
+    width: 100%;
+    height: 353px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0px;
+    margin-bottom: 7.5px;
+}
+.div2{
+    margin-right: 154px;
+}
+
+.sec3 h1{
+    width: 400px;
+    color: white;
+    text-align: left;
+    font-size: 44px;
+    font-weight: 650;
+}
+.sec3 h2{
+    width: 500px;
+    color: white;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+}
+.sec3 img{
+    height: 354px;
+    margin-left: 154px;
+}
+
+.sec4{
+    width: 100%;
+    height: 353px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0px;
+    margin-bottom: 7.5px;
+}
+.div3{
+    margin-left: 154px;
+}
+
+.sec4 h1{
+    width: 450px;
+    color: white;
+    text-align: left;
+    font-size: 44px;
+    font-weight: 650;
+}
+.sec4 h2{
+    width: 470px;
+    color: white;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+}
+.sec4 img{
+    height: 350px;
+    margin-right: 154px;
+}
+
+.sec5{
+    width: 100%;
+    height: 353px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0px;
+    margin-bottom: 7.5px;
+}
+
+.div4{
+    margin-right: 154px;
+}
+
+.sec5 h1{
+    width: 400px;
+    color: white;
+    text-align: left;
+    font-size: 44px;
+    font-weight: 650;
+}
+.sec5 h2{
+    width: 470px;
+    color: white;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+}
+.sec5 img{
+    height: 354px;
+    margin-left: 154px;
+}
+
+.sec6{
+    width: 100%;
+    height: 780px;
+    background-color: black;
+    padding: 72px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7.5px;
+}
+
+.div5{
+    width: 956px;
+    height: 780px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.div5 h1{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6{
+    width:908px;
+    height: 36px;
+    background-color: #2d2d2d;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.row1:hover, .row2:hover, .row3:hover, .row4:hover, .row5:hover, .row6:hover{
+    background-color: #414141;
+    transition: 0.1s ease;
+}
+
+.row1 img, .row2 img, .row3 img, .row4 img, .row5 img, .row6 img{
+    height: 30px;
+    position: absolute;
+    right: 30px;
+}
+
+.row7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row7 h2{
+    width: 892px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    display: block;
+    margin: 40px 0px 20px 0px;
+    text-align: center;
+}
+
+.row7 input{
+    width: 332px;
+    height: 24px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 2px;
+    background-color: transparent;
+    padding: 14px 16px 14px 16px;
+    display: inline-block;
+    margin: px 5px 0px 0px;
+}
+
+.row7 input:focus{
+    outline: 1px solid rgb(202, 202, 202) ;
+
+}
+
+.row7 ::placeholder{
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    top: 2px;
+}
+
+.row7 button{
+    width: 211px;
+    height: 56px;
+    color: white;
+    background-color: #E50914;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    margin: 0px 5px 0px 0px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.row7 button img{
+    height: 19px;
+    position: relative;
+    top: 2px;
+    left: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 430px;
+    background-color: black;
+    position: relative;
+}
+
+footer p{
+    color: #FFFFFFB3;
+    position: relative;
+    top: 82px;
+    left: 153px;
+    display: inline-block   ;
+}
+
+footer p a{
+    color: #FFFFFFB3;
+}
+
+.foot1{
+    width: 100%;
+}
+
+.foot2{
+    width: 800px;
+    height: 264px;
+    padding: 0px 48px;
+    margin: 72px 105px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.foot2 a{
+    color: #FFFFFFB3;
+    display: inline-block;
+    padding: 7px;
+}
+.col1, .col2, .col3, .col4{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.col4{
+    position: relative;
+    bottom: 20px;
+
+}
+
+.col1 a{
+    padding-left: 0px;
+}
+.foot3{
+    width: 800px;
+    height: 100px;
+    display: block;
+    margin-left: 153px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.foot3 select{
+    width: 126px;
+    height: 32px;
+    color: white;
+    background-color: transparent;
+    padding: 6px 6px 6px 32px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    position: relative;
+    right: 20px;
+}
+
+.foot3 select:focus{
+    outline: 1.5px solid white;
+}
+
+.foot3 label img{
+    height: 12px;
+    position: relative;
+    top: 1.5px;
+    left: 12px;
+    z-index: 0;
+}
+
+.foot3 h2{
+    position: absolute;
+    left: 2px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.foot3 select option{
+    color: black;
+    font-weight: 400;
+}
+
+.foot3{
+    color: #FFFFFFB3;
+    font-size: 10px;
+    font-weight: 50;
+    margin-top: 24px;
+}
