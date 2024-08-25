@@ -11,25 +11,27 @@ body{
     background-color: #2d2d2d;
 }
 header{
-    width: 900px;
-    height: 44px;
-    padding: 24px   48px;
-    margin-left: 105px;
-    margin-right: 105px;
+    width: 983px;
+    height: 120px;
+    /* padding: 0px 48px; */
+    /* margin-left: 105px;
+    margin-right: 105px; */
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     position: absolute;
     top: 0px;
+    box-sizing: border-box;
     z-index: 10;
 }
 
 header img{
     height: 40px;
     position: absolute;
-    left: -20px;
-    padding-left: 30px;
-    margin: 5px 10px;
+    left: 0px;
+    /* padding-left: 30px; */
+    /* margin: 5px 10px; */
 }
 
 header select{
@@ -42,8 +44,9 @@ header select{
     background-color: transparent;
     border-radius: 2px;
     margin: 5px 10px;
-    position: absolute;
-    right: 90px;
+    position: relative;
+    /* position: absolute; */
+    /* right: 90px; */
 }
 
 header select:focus{
@@ -53,8 +56,9 @@ header select:focus{
 header label img{
     height: 12px;
     position: absolute;
-    left: 744px;
-    bottom: 35px;
+    left: 764px;
+    bottom: 54px;
+    pointer-events: none;
 }
 
 header select option{
@@ -69,12 +73,12 @@ header button{
     font-weight: 600;
     background-color: #E50914;
     border-radius: 4px;
-    padding: 0;
+    /* padding: 0; */
     border: none;
     margin: 5px 10px;
-    position: absolute;
-    right: 0px;
-    bottom: 25px;
+    position: relative;
+    /* right: 0px; */
+    /* bottom: 25px; */
 }
 
 .sec1{
@@ -94,7 +98,7 @@ header button{
     color: white;
     text-align: center;
     position: relative;
-    top: 45px;
+    /* top: 45px; */
 }
 
 .heading h1{
